@@ -1,4 +1,4 @@
-function playGame(playerInput){
+const playGame = function(playerInput) {
     clearMessages();
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -65,19 +65,21 @@ function playGame(playerInput){
         printMessage('remis!');
     }
 
-    console.log('moves:', ComputerMove, PlayerMove);
 }
 
+const paperBtn = document.getElementById("play-paper"); 
+const rockBtn = document.getElementById("play-rock");
+const scissorsBtn = document.getElementById("play-scissors");
 
-document.getElementById("play-paper").addEventListener("click", function(){
+paperBtn.addEventListener("click", function(){
     playGame(2);
 })
 
-document.getElementById("play-rock").addEventListener("click", function(){
+rockBtn.addEventListener("click", function(){
     playGame(1);
 })
 
-document.getElementById("play-scissors").addEventListener("click", function(){
+scissorsBtn.addEventListener("click", function(){
     playGame(3);
 })
 
