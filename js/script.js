@@ -1,4 +1,4 @@
-const playGame = function(playerInput) {
+{const playGame = function(playerInput) {
     clearMessages();
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -29,3 +29,4 @@ scissorsBtn.addEventListener("click", function(){
     playGame(3);
 })
 
+}
